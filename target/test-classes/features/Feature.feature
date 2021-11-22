@@ -2,7 +2,7 @@
 Feature: Swag Lab Test
   I want to use this template for my feature file
 
-  @Regression
+  @Regression @Sanity
   Scenario Outline: Positive Login Functionality
     Given User has opened swaglabs web application
     When User has entered correct "<Username>" and "<Password>"

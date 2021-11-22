@@ -4,6 +4,7 @@ Feature: Products Add to cart test
   Background: Open login page
     Given User has opened swaglabs web application
 
+  @Regression @Sanity
   Scenario Outline: User is able to add product on product page
     When User has entered correct "<Username>" and "<Password>"
     And User click on Login Button
