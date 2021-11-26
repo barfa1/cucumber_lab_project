@@ -1,3 +1,5 @@
+test_feature/ProductStepDef.class
+test_feature/LoginTestStepDefs.class
+test_feature/TestRunner.class
 Cucumber_Project/Cucumber_Project/AppTest.class
 test_feature/BaseClass.class
-test_feature/LoginTestStepDefs.class

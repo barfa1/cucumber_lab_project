@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "Open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 269034459,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User has opened swaglabs web application",
-            "match": {
-              "location": "LoginTestStepDefs.user_has_opened_swaglabs_web_application()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-11-22T07:28:18.807Z",
+        "start_timestamp": "2021-11-26T12:06:42.195Z",
         "before": [
           {
             "result": {
-              "duration": 1042526843,
+              "duration": 1096899524,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "User is able to add product on product page",
+        "line": 14,
+        "name": "Positive Login Functionality",
         "description": "",
-        "id": "products-add-to-cart-test;user-is-able-to-add-product-on-product-page;;2",
+        "id": "swag-lab-test;positive-login-functionality;;2",
         "after": [
           {
             "result": {
-              "duration": 70410687,
+              "duration": 71913359,
               "status": "passed"
             },
             "match": {
@@ -56,7 +35,19 @@
         "steps": [
           {
             "result": {
-              "duration": 235516117,
+              "duration": 331247202,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User has opened swaglabs web application",
+            "match": {
+              "location": "LoginTestStepDefs.user_has_opened_swaglabs_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223828536,
               "status": "passed"
             },
             "line": 8,
@@ -78,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 152825329,
+              "duration": 136072987,
               "status": "passed"
             },
             "line": 9,
@@ -90,10 +81,351 @@
           },
           {
             "result": {
-              "duration": 233773593,
+              "duration": 153989120,
               "status": "passed"
             },
             "line": 10,
+            "name": "Validating if that user has been  navigated to product page",
+            "match": {
+              "location": "LoginTestStepDefs.validating_if_that_user_has_been_navigated_to_product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFeatures"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-26T12:06:44.253Z",
+        "before": [
+          {
+            "result": {
+              "duration": 466048630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Negative Login Functionality",
+        "description": "",
+        "id": "swag-lab-test;negative-login-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 67893169,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 307359860,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has opened swaglabs web application",
+            "match": {
+              "location": "LoginTestStepDefs.user_has_opened_swaglabs_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 302266709,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User has entered wrong \"locked_out_user\" and \"random_pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "locked_out_user",
+                  "offset": 24
+                },
+                {
+                  "val": "random_pass",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginTestStepDefs.user_has_entered_wrong_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37134256,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "LoginTestStepDefs.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34380155,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validating if that user has been  getting as \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginTestStepDefs.validating_if_that_user_has_been_getting_as_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFeatures"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-26T12:06:45.473Z",
+        "before": [
+          {
+            "result": {
+              "duration": 590163770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Negative Login Functionality",
+        "description": "",
+        "id": "swag-lab-test;negative-login-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 68832554,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 292064920,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has opened swaglabs web application",
+            "match": {
+              "location": "LoginTestStepDefs.user_has_opened_swaglabs_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 275413603,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User has entered wrong \"problem_user\" and \"random_pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "problem_user",
+                  "offset": 24
+                },
+                {
+                  "val": "random_pass",
+                  "offset": 43
+                }
+              ],
+              "location": "LoginTestStepDefs.user_has_entered_wrong_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34453059,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "LoginTestStepDefs.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31662839,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validating if that user has been  getting as \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginTestStepDefs.validating_if_that_user_has_been_getting_as_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestFeatures"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Swag Lab Test",
+    "description": "  I want to use this template for my feature file",
+    "id": "swag-lab-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Feature.feature",
+    "tags": [
+      {
+        "name": "@TestFeatures",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 283136152,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User has opened swaglabs web application",
+            "match": {
+              "location": "LoginTestStepDefs.user_has_opened_swaglabs_web_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-26T12:06:46.769Z",
+        "before": [
+          {
+            "result": {
+              "duration": 545556809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User is able to add product on product page",
+        "description": "",
+        "id": "products-add-to-cart-test;user-is-able-to-add-product-on-product-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 67890060,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 206452371,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User has entered correct \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 26
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginTestStepDefs.user_has_entered_correct_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133608877,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "LoginTestStepDefs.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 247862705,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "Validating if that user has been  navigated to product and click on add product \"Sauce Labs Backpack\"",
             "match": {
               "arguments": [
@@ -108,10 +440,10 @@
           },
           {
             "result": {
-              "duration": 33274927,
+              "duration": 23697273,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "Validating if that user has added a product to product page",
             "match": {
               "location": "ProductStepDef.validating_if_that_user_has_added_a_product_to_product_page()"
@@ -122,6 +454,12 @@
         "tags": [
           {
             "name": "@ProductTest"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
           }
         ]
       }
